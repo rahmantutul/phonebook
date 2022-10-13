@@ -1,0 +1,88 @@
+form {
+    max-width: 850px;
+    text-align: center;
+    margin: 40px auto;
+  }
+  form input, form textarea {
+    border: 0;
+    outline: 0;
+    padding: 12px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', sans-serif;
+    resize: none;
+    background: #fff;
+  }
+  form input:focus, form textarea:focus {
+    border: 2px #f44336 !important;
+  }
+  form #input-submit {
+    color: white;
+    background: #f44336;
+    cursor: pointer;
+  }
+  form textarea {
+    height: 130px;
+  }
+  
+  .half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+  }
+  
+  .right {
+    width: 50%;
+  }
+  
+  .left {
+    margin-right: 2%;
+  }
+  
+  @media (max-width: 480px) {
+    .half {
+      width: 100%;
+      float: none;
+      margin-bottom: 0;
+    }
+  }
+  /* Clearfix */
+  .cf:before,
+  .cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  .from-area{
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.05),0 0 0 10px rgba(0,0,0,0.05);
+  }
+  .cf label{
+     font-size: 18px;
+     margin-top: 5px;
+  }
+  @media (max-width:770px){
+    form input, form textarea {
+        padding: 6px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      .cf label{
+        font-size: 12px;
+        margin-top: 5px;
+     }
+     form textarea {
+      height: 70px;
+    }
+  }
+  
