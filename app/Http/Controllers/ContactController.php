@@ -13,7 +13,7 @@ class ContactController extends Controller
 {
    public function index(Request $request){
       $user = Auth::user()->id;
-      $contacts= Contact::with('emails','phones')->where('user_id',$user)->paginate('10');
+      $contacts= Contact::with('emails','phones')->where('user_id',$user)->latest()->paginate('10');
       return view('home',compact('contacts'));
    }
    public function edit(Request $request, $id){

@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('phones', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('contact_id');
-            $table->integer('phone');
+            $table->bigInteger('phone');
             $table->timestamps();
 
             $table->foreign('contact_id')

@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('image')->nullable();
             $table->tinyInteger('is_favorite');
-            $table->date('birthday');
-            $table->string('worked_at');
+            $table->date('birthday')->nullable();
+            $table->string('worked_at')->nullable();
             $table->timestamps();
 
         });
